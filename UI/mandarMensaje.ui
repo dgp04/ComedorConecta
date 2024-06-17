@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>870</width>
+    <height>446</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Enviar mensaje</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../src/resources.qrc">
+    <normaloff>:/logo/iconoProyecto.png</normaloff>:/logo/iconoProyecto.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame_superior">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_logo">
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../src/resources.qrc">:/logo/logoProyecto.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-size: 16px;
+font-weight: bold;
+color: #2a5c94;
+}</string>
+       </property>
+       <property name="text">
+        <string>Seleccione el mensaje y los alumnos a cuyos padres desea mandarlo:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QComboBox" name="box_seleccion_mensaje">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string>Seleccione el mensaje que desea enviar</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QComboBox{
+background-color: transparent;
+color: #2a5c94;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+padding: 5px;
+}
+QComboBox:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>--Seleccione un mensaje--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno no ha comido nada</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno se ha comido el primer plato pero no ha querido segundo plato</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno no ha comido primer plato pero ha comido segundo plato y postre</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno se ha comido los tres platos y ha terminado casi todo</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno se ha comido todos los platos</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>El alumno se ha comido todos los platos y ha querido repetir plato</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">QTableWidget, QHeaderView::section{
+background-color: transparent;
+}
+</string>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>163</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>NRE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Curso</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Clase</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Padre/Madre</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="topMargin">
+        <number>5</number>
+       </property>
+       <property name="bottomMargin">
+        <number>5</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="btn_enviar_mensaje">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 5px 15px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Eliminar alumno/s</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../src/resources.qrc"/>
+  <include location="../src/resources.qrc"/>
+  <include location="../../../../../.designer/src/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>923</width>
+    <height>616</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Datos de los alumnos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../src/resources.qrc">
+    <normaloff>:/logo/iconoProyecto.png</normaloff>:/logo/iconoProyecto.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QFrame" name="frame_superior">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::Shape::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Shadow::Raised</enum>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_logo">
+          <property name="maximumSize">
+           <size>
+            <width>120</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap resource="../src/resources.qrc">:/logo/logoProyecto.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignmentFlag::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+font-size: 25px;
+font-weight: bold;
+color: #2a5c94;
+}</string>
+       </property>
+       <property name="text">
+        <string>Alumnos de</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 0 5px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Volver atrás</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Orientation::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Policy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>300</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 0 5px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Enviar mensaje</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../src/resources.qrc">
+           <normaloff>:/iconosLaterales/mensaje.png</normaloff>:/iconosLaterales/mensaje.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_2">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 0 5px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Añadir alumno</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../src/resources.qrc">
+           <normaloff>:/iconosLaterales/anadir.png</normaloff>:/iconosLaterales/anadir.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 0 5px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Editar alumno</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../src/resources.qrc">
+           <normaloff>:/iconosLaterales/editar.png</normaloff>:/iconosLaterales/editar.png</iconset>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 0 5px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+font-size: 16px;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+         </property>
+         <property name="text">
+          <string>Eliminar alumno</string>
+         </property>
+         <property name="icon">
+          <iconset resource="../src/resources.qrc">
+           <normaloff>:/iconosLaterales/eliminar.png</normaloff>:/iconosLaterales/eliminar.png</iconset>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="styleSheet">
+        <string notr="true">QTableWidget, QHeaderView::section{
+background-color: transparent;
+}
+</string>
+       </property>
+       <attribute name="horizontalHeaderDefaultSectionSize">
+        <number>163</number>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>NRE</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Curso</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Clase</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Padre/Madre</string>
+        </property>
+       </column>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../src/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

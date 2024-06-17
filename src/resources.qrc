@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="logo">
+    <file>iconoProyecto.png</file>
+    <file>logoProyecto.png</file>
+  </qresource>
+  <qresource prefix="iconosLaterales">
+    <file>mensaje.png</file>
+    <file>anadir.png</file>
+    <file>editar.png</file>
+    <file>eliminar.png</file>
+    <file>ajustes.png</file>
+    <file>cierre.png</file>
+    <file>padres.png</file>
+    <file>estudiante-icono-png.png</file>
+    <file>chat.png</file>
+  </qresource>
+</RCC>

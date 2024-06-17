@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cursos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../src/resources.qrc">
+    <normaloff>:/logo/iconoProyecto.png</normaloff>:/logo/iconoProyecto.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame_superior">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QLabel" name="label_logo">
+         <property name="maximumSize">
+          <size>
+           <width>120</width>
+           <height>150</height>
+          </size>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap resource="../src/resources.qrc">:/logo/logoProyecto.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QFrame" name="frame_inferior">
+      <property name="font">
+       <font>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item>
+        <widget class="QFrame" name="frame">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #2a5c94;
+border-top-right-radius: 10px;
+</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btn_chat">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: none;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+QPushButton:hover{
+background-color: rgb(60, 79, 255);
+text-decoration: underline;
+}</string>
+            </property>
+            <property name="text">
+             <string>CHAT</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../src/resources.qrc">
+              <normaloff>:/iconosLaterales/chat.png</normaloff>:/iconosLaterales/chat.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_alumnos">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: none;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+QPushButton:hover{
+background-color: rgb(25, 22, 109);
+text-decoration: underline;
+}</string>
+            </property>
+            <property name="text">
+             <string>Alumnos</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../src/resources.qrc">
+              <normaloff>:/iconosLaterales/estudiante-icono-png.png</normaloff>:/iconosLaterales/estudiante-icono-png.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_padres">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: none;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+QPushButton:hover{
+background-color: rgb(25, 22, 109);
+text-decoration: underline;
+}</string>
+            </property>
+            <property name="text">
+             <string>Padres</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../src/resources.qrc">
+              <normaloff>:/iconosLaterales/padres.png</normaloff>:/iconosLaterales/padres.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_ajustes">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: none;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+QPushButton:hover{
+background-color: rgb(25, 22, 109);
+text-decoration: underline;
+}</string>
+            </property>
+            <property name="text">
+             <string>Ajustes</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../src/resources.qrc">
+              <normaloff>:/iconosLaterales/ajustes.png</normaloff>:/iconosLaterales/ajustes.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>32</width>
+              <height>32</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Fixed</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>250</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_logout">
+            <property name="font">
+             <font>
+              <pointsize>12</pointsize>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+border: none;
+background-color: transparent;
+padding: 10px;
+border-radius: 5px;
+color: white;
+font-weight: bold;
+}
+QPushButton:hover{
+background-color: rgb(25, 22, 109);
+text-decoration: underline;
+}</string>
+            </property>
+            <property name="text">
+             <string>Log out</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../src/resources.qrc">
+              <normaloff>:/iconosLaterales/cierre.png</normaloff>:/iconosLaterales/cierre.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>25</width>
+              <height>25</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QFrame" name="frame_2">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="btn_sexto">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 6º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_quinto">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 5º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_cuarto">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 4º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_tercero">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 3º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_segundo">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 2º</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_primero">
+            <property name="maximumSize">
+             <size>
+              <width>1570</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton{
+background-color: #ffffff;
+color: #2a5c94;
+padding: 10px 20px;
+border: 2px solid #2a5c94;
+border-radius: 5px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+cursor: pointer;
+font-size: 16px;
+transition: all 0.3s ease;
+}
+QPushButton:hover{
+background-color: #2a5c94;
+color: white;
+}</string>
+            </property>
+            <property name="text">
+             <string>Curso 1º</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../src/resources.qrc"/>
+  <include location="../src/resources.qrc"/>
+  <include location="../src/resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
